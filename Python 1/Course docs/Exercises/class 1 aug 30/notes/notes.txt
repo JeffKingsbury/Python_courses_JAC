@@ -1,0 +1,175 @@
+Numbers:
+Ints = 1,2,3
+floats = 1.0, 2.1, 3.1e10
+
+Type function: 
+type(9) => Class(Int)
+type(9.0) => Class(Float)
+
+convert:
+Int(3.2) = 3
+Float(6) = 6.0
+
+Comments: 
+start with # (#This is a comment).
+
+print() will display in the console
+prompt() will ask the user for input in the console
+
+print multiple values with space by using a comma (ex: print(val1, val2, val3))
+
+Chained assignments:
+a=b=c= 100 
+a b and c will all = 100.
+
+Multiple assignments:
+x,y,z = 1, "two", 3.0 
+each will assign its value in order (ex: x = 1, y = "two", z=3.0);
+
+Swapping variables:
+
+a,b = b,a 
+This will make a = b and b = a
+
+Naming conventions:
+mixedCase
+CamelCase
+under_score
+
+name them something that reflects what they store (ex: "final_score" instead of "x")
+
+Reserved words that cannot be used as variable names:
+Class
+finally
+is
+return
+None
+continue
+for
+from
+lambda
+try
+True
+def
+nonlocal
+while
+and
+del
+global
+not
+with
+as
+elif
+if
+or
+yield
+assert
+else
+import
+pass
+break
+except
+in
+raise
+False 
+
+Arithmetic Operations: 
+x+y = sum
+x-y = Difference
+x*y = Product
+x/y = Quotient
+x//y floored quotient 
+x%y Remainder
+abs(x) absolute
+int(x) int (conversion)
+float(x) float (conversion)
+pow(x,y) X to the power of Y
+x ** y X to the power of Y
+
+Find odd and evens:
+ans = num % 2
+
+if ans = 0, its even.
+if ans = 1, its odd.
+
+Operator precedence 
+**
+% and //
+* and /
++ and -
+The use of ( ) implies precedence.
+
+
+
+Datatype: String
+in double / single quotes " / '
+
+assigned the same way as Numbers
+variable = 'This is a String';
+
+String concatenation: 
+"Hello" + "world" = "Helloworld";
+
+Python cannot concatenate an int and string. Int must be converted.
+newStr = "Your code is: " + str(5);
+printing will also need to convert to string when concatenating,
+can also use print("String", int)
+comma will add a space and print the int.
+
+You can multply strings:
+"A" * 5 = "AAAAA"
+
+use len() to get length of string.
+var 'John Abbott'
+print(len(var)) = 11
+
+Indexing:
+Strings:
+word = 'Python';
+word[0] = 'P'
+word[5] = 'n'
+
+You can also index backwards. Last element of string is -1.
+word[-6] = 'P'
+word[-1] = 'n'
+
+Python strings are immutable. Cannot be changed once created.
+so word[0] = 'T'
+will give an error.
+(Same for ints and floats)
+
+slicing strings: 
+word[0,2] # chars from position 0(included) to 2(excluded)
+word[0,2] = 'Py'
+
+word[:2] chars. from the start to position(excluded)
+word[:2] = 'Py'
+
+word[4:] # chars from position 4(included) to end of string
+word[4:] = 'on'
+word[-2:] = 'on'
+
+Reversing a string:
+[::-1]
+[start (included) : end (Excluded) : Step]
+
+inputs:
+inputs will always be a string
+convert it to int or float
+
+num1 = int(input(""))
+or
+num1 = input("")
+int(num1)
+
+logical expressions:
+priority:
+==
+!=
+not
+and
+or
+
+can also use brackets:
+not(True and (False or True))
+
