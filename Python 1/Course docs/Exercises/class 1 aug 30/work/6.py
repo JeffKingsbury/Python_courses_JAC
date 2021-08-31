@@ -12,7 +12,7 @@ five = int(dollar / 5);
 if five >= 1:
     print(five, 'Five dollar bill(s)');
     if dMf / 2 >= 1:
-        print(int(dMf / 2), "Toonie(s)");
+        print(int(dMf / 2), "Toonie(s)");4
         if int(dMf % 2) >= 1:
             print(int(dMf % 2), "Loonie(s)");
             
@@ -23,3 +23,7 @@ else:
             print(int(dMf % 2), "Loonie(s)");
     else:
         print(int(dMf % 2), "Loonie(s)");
+        
+        
+        
+    
