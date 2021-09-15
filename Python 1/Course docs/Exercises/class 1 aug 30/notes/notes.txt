@@ -173,3 +173,55 @@ or
 can also use brackets:
 not(True and (False or True))
 
+PLACEHOLDERS:
+
+{} can be used as placeholders in strings:
+ex:
+
+str1 = "Hello, ";
+str2 = " how are you?";
+
+str = "{}Jeff.{}".format(str1, str2);
+print(str)
+
+
+padding and aligning strings:
+10 is the number of spaces.
+"{:>10}".format("test");  will right align the word test: "       test"
+"{:10}.format("test");    will left align the word test: "test    "
+"{:^10}.format("test");   will center the word test "   test    "
+
+
+Keyword sep:
+sep will change the separator in strings. 
+ex:
+str = "aaaa"
+str2 = "bbbb"
+str3 = "ccccc"
+
+print(str, str2, str3, sep = '|');
+
+will change the space to a | (aaaa|bbbbb|ccccc)
+
+
+Keyword end:
+
+end changes what will happen when reaching the end of the line
+ex:
+print("Some words", end ='');
+print("Some other words");
+
+will print 
+"Some words some other words"
+instead of
+"Some words
+Some other words"
+
+(Essentially removing the \n)
+
+usefull for loops like 
+
+for x in range(11):
+    print(x, end =' ');
+
+This will print all the results on the same line

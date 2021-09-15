@@ -1,0 +1,17 @@
+for x in LIST
+print(x)
+
+will print all the keys in dictionary
+
+
+for x in LIST.values()
+print(x)
+will print all the values in dictionary 
+
+
+for x, i in LIST.items()
+print(x, i)
+will print both
+
+LIST.get('example', 0)
+This will check the list for 'example', if it doesnt exist it will send 0 instead of an error.
