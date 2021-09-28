@@ -1,0 +1,87 @@
+Global and local variables in functions behave weirdly. 
+
+myvar = 1
+
+def func():
+    myvar = 2
+
+print(myvar)
+
+^ This will print 1. 
+Thats because saying myvar = 2 creates a variable local to the function, not the app.
+
+to change the GLOBAL variable you must use the global keyword:
+
+myvar = 1 
+
+def func():
+    global myvar
+    myvar = 2 
+
+print(myvar)
+
+^ This will print 2, since the global variable was changed. 
+
+You CAN edit global lists, libraries, etc from a function. but not reassign them without using global.
+
+
+
+
+Passing a variable number of params to a function:
+Using the * before the variable tells the function that multiple numbers of non-keyworded arguments are being passed (tupple ()).
+
+def func(*args):
+    sum = 0
+    for i in args:
+        sum += i
+        return sum
+print ("the sum is", func(1,2,3,4))
+
+^prints 10
+
+
+Using the ** beofre the variable tells the function that multiple KEYWORDED arguments are being passed (dictionary {}).
+
+def func(**kwargs):
+    if kwargs:
+        for key, value in kwargs.items():
+            print('var name:', key, 'value', value);
+
+func(player='Zelda', color='red')
+
+
+OR
+
+
+def player_value(**kargs):
+    energy = kargs['energy']
+    stamina = kargs['stamina']
+    power = kargs['power']
+    magic = kargs['magic']
+    fight = kargs['fight']
+
+    result = (energy * stamina) / power + (magic + fight) / abs(magic - fight);
+    return round(result, 1)
+
+p_value = (player_value(energy=8, stamina=5, magic=10, power=7, fight=6))
+print("player value: {}".format(p_value))
+
+
+
+^ This code will give an error if the function is not given all the params (kargs). 
+To give default values when params are not passed:
+
+energy = kargs.get('energy', 1);
+
+^ This has a default of 1 if energy is not passed when calling the function.
+
+unpacking values
+
+mylist = [22,33,44,55,66,77]
+
+a,b,c,d,e,f = mylist => a=22, b=33, c=44, d=55, e=66, f=77;
+
+a, *b = mylist => a=22, b=[33,44,55,66,77];
+
+a, *b, c = mylist => a=22, b=[33,44,55,66], c=77
+
