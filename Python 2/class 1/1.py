@@ -16,7 +16,6 @@
 #  bal_dec(decrement)
 #  print(“Final balance:”, balance)
 
-balance = 0;
 
 def bal_inc(increment):
     global balance;
@@ -26,6 +25,7 @@ def bal_dec(decrement):
     global balance;
     balance -= decrement;
     
+balance = 0;
 increment = 5
 decrement = 3
 

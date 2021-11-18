@@ -1,0 +1,27 @@
+[
+    {
+        "Country":"Canada",
+        "Capital":"Ottawa",
+        "Population":883391
+    },
+    {
+        "Country":"United States of America",
+        "Capital":"Washington DC",
+        "Population":692683
+    },
+    {
+        "Country":"Mexico",
+        "Capital":"Mexico City",
+        "Population":8885000
+    },
+    {
+        "Country":"United Kingdom",
+        "Capital":"London",
+        "Population":9000000
+    },
+    {
+        "Country":"China",
+        "Capital":"Beijing",
+        "Population":21540000
+    }
+]

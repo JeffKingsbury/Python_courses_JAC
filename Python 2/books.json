@@ -1,0 +1,79 @@
+{
+    "books":{
+        "1":{
+            "title":"Name of the wind",
+            "Genre":"Fantasy",
+            "price ($)":10.0
+        },
+        "2":{
+            "title":"Wise mans fear",
+            "Genre":"Fantasy",
+            "price ($)":19.0
+        },
+        "3":{
+            "title":"Name of the wind",
+            "Genre":"fantasy",
+            "price ($)":199.0
+        },
+        "4":{
+            "title":"adasd",
+            "Genre":"asd",
+            "price ($)":19.0
+        },
+        "5":{
+            "title":"asd",
+            "Genre":"asd",
+            "price ($)":2.0
+        },
+        "6":{
+            "title":"das",
+            "Genre":"2",
+            "price ($)":4.0
+        },
+        "7":{
+            "title":"asda",
+            "Genre":"s",
+            "price ($)":1.0
+        },
+        "8":{
+            "title":"asda",
+            "Genre":"as",
+            "price ($)":1.0
+        },
+        "9":{
+            "title":"fa",
+            "Genre":"as",
+            "price ($)":1.0
+        },
+        "10":{
+            "title":"sad",
+            "Genre":"s",
+            "price ($)":2.0
+        },
+        "11":{
+            "title":"asd",
+            "Genre":"f",
+            "price ($)":4.0
+        },
+        "12":{
+            "title":"dsds",
+            "Genre":"",
+            "price ($)":1.0
+        },
+        "13":{
+            "title":"das",
+            "Genre":"asd",
+            "price ($)":2.0
+        },
+        "14":{
+            "title":"asd",
+            "Genre":"2",
+            "price ($)":2.0
+        },
+        "15":{
+            "title":"2",
+            "Genre":"2",
+            "price ($)":2.0
+        }
+    }
+}
